@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111410"><meta name="description" content="An animation studio for five little characters. Choose nineteen actions and visual gags, traveling size and color waves, and project.">
+  <title>Little scenes — Projection studio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23d5ef73'/%3E%3Cpath d='M5 20Q20 3 35 20Q20 37 5 20M20 13V27' fill='none' stroke='%23111410' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="artwork.js"></script><script defer src="warp.js"></script><script defer src="antics.js"></script><script defer src="collection.js"></script><script defer src="motion.js"></script><script defer src="renderer.js"></script><script defer src="export.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <div id="editor">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Little scenes home"><span class="brand-mark"><svg viewBox="0 0 40 40"><path d="M4 20Q20 2 36 20Q20 38 4 20Z"/><ellipse cx="20" cy="20" rx="5" ry="9"/></svg></span><span>little scenes<span class="brand-period">.</span></span></a>
+      <div class="header-caption">A little movement. A big night.</div>
+      <div class="header-actions"><span class="local-badge"><i></i> LOCAL STUDIO</span><button id="saveProject" class="button quiet">Save project <span>↓</span></button><a id="openProjection" class="button primary" href="?projection=output" target="little-scenes-output" rel="opener">Open projection <span>↗</span></a></div>
+    </header>
+    <div class="projectbar"><div><span class="eyebrow">YOUR STAGE</span><h1>Five little movers <span class="project-dot"></span></h1></div><div class="project-meta"><span id="presetBadge">EVENT SCENE</span><span>Vector characters · Black canvas</span></div></div>
+    <main class="workspace">
+      <aside class="cast-panel panel">
+        <div class="panel-title"><h2>The cast</h2><span class="count">05</span></div>
+        <p class="muted small">Original shapes. New moves.</p>
+        <div class="segmented" id="castMode"><button data-cast="all" class="active">Everyone</button><button data-cast="solo">Solo</button></div>
+        <div id="characterList" class="character-list"></div>
+        <button id="restoreColors" class="text-button">↺ Restore reference colors</button>
+        <div class="cast-foot"><span class="mini-eye">◉</span><div><strong>Made from your artwork</strong><p>Five vector figures, with moving<br>hips, knees, and feet.</p></div></div>
+      </aside>
+      <section class="center-column">
+        <div class="stage-panel panel">
+          <div class="stage-toolbar"><span><i class="status-dot"></i> LIVE STAGE</span><div><button id="alignmentToggle" class="icon-button" title="Align projection corners (C)" aria-pressed="false">⤢ <span>Align</span></button><button id="guidesToggle" class="icon-button" title="Toggle stage guides" aria-pressed="false">⌗ <span>Guides</span></button><button id="rigToggle" class="icon-button" title="Show the character rig" aria-pressed="false">◇ <span>Rig</span></button><span class="divider"></span><button id="fullscreen" class="icon-button" title="Fullscreen projection (F)">⛶</button></div></div>
+          <div class="stage-wrap" id="stageWrap">
+            <canvas id="stage" width="1280" height="720" aria-label="Animated characters on a black projection stage"></canvas>
+            <div class="stage-corner top-left">PROJECTION PREVIEW</div><div class="stage-corner bottom-left"><span class="black-swatch"></span> #000000</div><div class="stage-corner bottom-right" id="resolutionLabel">16:9</div>
+            <div id="blackoutNotice" hidden>BLACKOUT <span>Press B to resume</span></div>
+            <div class="warp-overlay" data-warp-overlay hidden>
+              <svg class="warp-outline" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><polygon id="stageQuad"/></svg>
+              <button class="warp-handle" data-warp-corner="0" aria-label="Top-left projection corner"><span>TL</span></button>
+              <button class="warp-handle" data-warp-corner="1" aria-label="Top-right projection corner"><span>TR</span></button>
+              <button class="warp-handle" data-warp-corner="2" aria-label="Bottom-right projection corner"><span>BR</span></button>
+              <button class="warp-handle" data-warp-corner="3" aria-label="Bottom-left projection corner"><span>BL</span></button>
+              <div class="warp-controls"><span>DRAG CORNERS</span><button data-warp-reset>Reset</button><button data-warp-done>Done <kbd>C</kbd></button></div>
+            </div>
+          </div>
+          <div class="transport"><div class="transport-buttons"><button id="restart" class="icon-button" title="Restart (R)" aria-label="Restart">↤</button><button id="playPause" class="play-button" title="Play or pause (Space)" aria-label="Pause">Ⅱ</button><span id="timeLabel" class="time-label">00:00 <span>/ 00:24</span></span></div><span class="action-label" id="currentAction">RUNNING IN</span><button id="loopToggle" class="loop-button active" aria-pressed="true" title="Loop scene">↻ <span>Loop</span></button></div>
+          <div class="timeline-area"><div id="timelineSegments" class="timeline-segments"></div><input id="timeline" type="range" min="0" max="24" step="0.01" value="0" aria-label="Scene playhead"><div class="timeline-ticks"><span>00:00</span><span id="tick1">00:06</span><span id="tick2">00:12</span><span id="tick3">00:18</span><span id="tick4">00:24</span></div></div>
+        </div>
+        <section class="effects-panel panel" aria-label="Visual effects"><div class="effect-box"><label class="action-toggle" for="colorWave"><strong>Color wave</strong><input type="checkbox" role="switch" id="colorWave" aria-label="Color wave"><output id="colorWaveValue">false</output></label><label class="effect-select" for="colorBlend">Color changes<select id="colorBlend"><option value="smooth">Smooth fades</option><option value="steps">Solid steps</option></select></label></div><div class="effect-box"><label class="action-toggle" for="sizeWave"><strong>Size wave</strong><input type="checkbox" role="switch" id="sizeWave" aria-label="Size wave"><output id="sizeWaveValue">false</output></label><div class="control effect-amount"><label for="sizeWaveAmount">Growth <output id="sizeWaveAmountValue">65%</output></label><input type="range" id="sizeWaveAmount" min="0.1" max="1.2" step="0.05" value="0.65"></div></div><label class="effect-select travel-direction" for="direction">Travel direction<select id="direction"><option value="ltr">Left → right</option><option value="rtl">Right → left</option><option value="alternate">Alternate each pass</option></select><small>Run across · Chase · Solo return · Eye car</small></label><p id="randomWaveStatus" class="random-wave-status" hidden>Waves this scene</p></section>
+        <section class="motion-panel"><div class="section-heading"><div><span class="eyebrow">BUILD YOUR EVENT SCENE</span><h2>Small characters, big energy.</h2></div><span class="small muted" id="enabledActionCount">2 / 35 enabled</span></div><button class="preset active event-preset" data-preset="scene"><span class="preset-symbol">✳</span><span><strong>Play event scene</strong><small>Loop the enabled actions</small></span><span class="event-play">▶</span></button><button id="randomShow" class="button random-show-button" title="Enable all new scenes and occasional waves">Random show <span>New scenes + occasional waves ↻</span></button><a class="absurd-gallery-link" href="Absurd%20Scenes.html" target="_blank" rel="noopener">Preview the absurd scenes <span>↗</span></a><div class="collection-launcher"><a href="Collection%20Library.html" target="_blank" rel="noopener"><strong>Collection 01</strong><span>6 scenes · 30 individual roles ↗</span></a><button id="addCollection" class="button quiet" title="Enable the six collection scenes without clearing your current event">Add collection +</button></div><div class="sequence-options"><p class="action-help">Switch actions on for the event. Click a name to preview its loop.</p><label class="random-option"><input type="checkbox" id="random"> Random</label><label class="random-option"><input type="checkbox" id="randomEffects"> Random waves</label></div><p class="solo-help">Solo return may follow Run across. Random waves switches the checked waves on and off per scene.</p><div class="preset-grid" id="presets"></div></section>
+        <div class="stage-footer"><span><i class="status-dot"></i> Ready for the big screen</span><span><kbd>Space</kbd> Play / pause <kbd>F</kbd> Fullscreen <kbd>B</kbd> Blackout</span></div>
+      </section>
+      <aside class="settings-panel panel">
+        <div class="panel-title"><h2>Make it move</h2><span>↗</span></div><p class="muted small">Dial in your scene.</p>
+        <div class="control"><label for="duration">Scene length <output id="durationValue">24 s</output></label><input type="range" id="duration" min="6" max="180" step="1" value="24"><div class="range-labels"><span>6 seconds</span><span>180 seconds</span></div></div>
+        <div class="control"><label for="tempo">Movement speed <output id="tempoValue">1.0×</output></label><input type="range" id="tempo" min="0.5" max="2" step="0.05" value="1"><div class="range-labels"><span>Easy</span><span>Lively</span></div></div>
+        <div class="control"><label for="energy">Energy <output id="energyValue">100%</output></label><input type="range" id="energy" min="0.25" max="1.8" step="0.05" value="1"><div class="range-labels"><span>Subtle</span><span>Extra</span></div></div>
+        <div class="control"><label for="size">Character size <output id="sizeValue">30%</output></label><input type="range" id="size" min="0.1" max="0.48" step="0.01" value="0.3"></div>
+        <div class="control"><label for="ground">Stage position <output id="groundValue">78%</output></label><input type="range" id="ground" min="0.45" max="0.95" step="0.01" value="0.78"><div class="range-labels"><span>Higher</span><span>Lower</span></div></div>
+        <div class="alignment-section"><span class="eyebrow">PROJECTOR ALIGNMENT</span><button id="alignProjection" class="button export-main">Align corners <span>⤢</span></button><p>Drag each corner to fit an angled projection.<br>Arrow keys nudge. Shift moves farther.</p><div class="alignment-status"><span id="alignmentStatus">No correction applied</span><button id="resetAlignment">Reset</button></div></div>
+        <div class="export-section"><span class="eyebrow">TAKE IT TO YOUR EVENT</span><button id="exportPlayback" class="button export-main">Export animation <span>↗</span></button><p>Standalone playback. Works offline.<br>Includes your projector alignment.</p><div class="export-links"><button id="exportSvg">SVG frame</button><span>·</span><button id="exportPng">PNG frame</button><span>·</span><button id="videoExport" title="Unwarped source video; export HTML to include alignment">WebM video</button></div><label class="checkbox-label"><input type="checkbox" id="transparentExport"> Transparent frame exports</label></div>
+        <div class="project-links"><button id="loadProject">Open saved project</button><input id="projectFile" type="file" accept=".json,application/json" hidden><button id="blackout" title="Blackout (B)">Blackout <kbd>B</kbd></button></div>
+      </aside>
+    </main>
+    <footer class="page-footer"><span>LITTLE SCENES / MOTION STUDIO</span><span>Your artwork, brought to life.</span></footer>
+  </div>
+  <div id="projection" hidden>
+    <canvas id="projectionCanvas" width="1920" height="1080"></canvas>
+    <button id="projectionFullscreen">Click to go fullscreen <span>Move this window to your projector · F fullscreen · C align corners · B blackout</span></button>
+    <div class="warp-overlay" data-warp-overlay hidden>
+      <svg class="warp-outline" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><polygon id="projectionQuad"/></svg>
+      <button class="warp-handle" data-warp-corner="0" aria-label="Top-left projection corner"><span>TL</span></button>
+      <button class="warp-handle" data-warp-corner="1" aria-label="Top-right projection corner"><span>TR</span></button>
+      <button class="warp-handle" data-warp-corner="2" aria-label="Bottom-right projection corner"><span>BR</span></button>
+      <button class="warp-handle" data-warp-corner="3" aria-label="Bottom-left projection corner"><span>BL</span></button>
+      <div class="warp-controls"><span>ALIGN PROJECTION · DRAG CORNERS</span><button data-warp-reset>Reset</button><button data-warp-done>Done <kbd>C</kbd></button></div>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="recordDialog"><div class="record-dot"></div><h2>Recording your scene</h2><p id="recordProgress">Preparing 1920 × 1080 video…</p><progress id="recordBar" value="0" max="1"></progress><button id="cancelRecording" class="button quiet">Cancel recording</button><p class="muted small">Keep this tab open while it records.</p></dialog>
+</body>
+</html>

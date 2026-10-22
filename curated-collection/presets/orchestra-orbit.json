@@ -1,0 +1,86 @@
+{
+  "format": "little-scenes",
+  "version": 1,
+  "settings": {
+    "preset": "orchestra",
+    "cast": "solo",
+    "character": 1,
+    "duration": 12,
+    "size": 0.4,
+    "energy": 0.85,
+    "tempo": 1,
+    "ground": 0.8,
+    "glow": 0,
+    "loop": true,
+    "colorWave": false,
+    "colorBlend": "smooth",
+    "sizeWave": false,
+    "sizeWaveAmount": 0.65,
+    "direction": "ltr",
+    "random": false,
+    "randomSeed": 1,
+    "randomEffects": false,
+    "enabledActions": {
+      "run": false,
+      "jump": false,
+      "dance": false,
+      "walk": false,
+      "march": false,
+      "shuffle": false,
+      "sidestep": false,
+      "sway": false,
+      "bow": false,
+      "twist": false,
+      "squat": false,
+      "kick": false,
+      "spin": false,
+      "swap": false,
+      "chase": false,
+      "solo": false,
+      "ball": false,
+      "confetti": false,
+      "peek": false,
+      "car": false,
+      "tag": false,
+      "disco": false,
+      "hide": false,
+      "chat": false,
+      "cloudball": false,
+      "juggle": false,
+      "sleep": false,
+      "sword": false,
+      "draw": false,
+      "pilates": false,
+      "garden": false,
+      "kitchen": false,
+      "orchestra": true,
+      "atelier": false,
+      "laundry": false
+    },
+    "colors": [
+      "#f4c044",
+      "#d86c3c",
+      "#c4d078",
+      "#589448",
+      "#4460a0"
+    ],
+    "warp": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  }
+}

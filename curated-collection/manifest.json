@@ -1,0 +1,1406 @@
+{
+  "format": "little-scenes-collection",
+  "version": 1,
+  "title": "Collection 01 — Ensemble studies",
+  "loopSeconds": 12,
+  "referenceFps": 24,
+  "constraints": [
+    "original armless figures",
+    "black background",
+    "characters above standing baseline"
+  ],
+  "scenes": [
+    {
+      "id": "pilates",
+      "title": "Pilates club",
+      "description": "Five quiet exercises, five different rhythms. A small studio on one line.",
+      "project": "presets/pilates.json",
+      "settings": {
+        "preset": "pilates",
+        "cast": "all",
+        "character": 0,
+        "duration": 12,
+        "size": 0.28,
+        "energy": 0.85,
+        "tempo": 1,
+        "ground": 0.8,
+        "glow": 0,
+        "loop": true,
+        "colorWave": false,
+        "colorBlend": "smooth",
+        "sizeWave": false,
+        "sizeWaveAmount": 0.65,
+        "direction": "ltr",
+        "random": false,
+        "randomSeed": 1,
+        "randomEffects": false,
+        "enabledActions": {
+          "run": false,
+          "jump": false,
+          "dance": false,
+          "walk": false,
+          "march": false,
+          "shuffle": false,
+          "sidestep": false,
+          "sway": false,
+          "bow": false,
+          "twist": false,
+          "squat": false,
+          "kick": false,
+          "spin": false,
+          "swap": false,
+          "chase": false,
+          "solo": false,
+          "ball": false,
+          "confetti": false,
+          "peek": false,
+          "car": false,
+          "tag": false,
+          "disco": false,
+          "hide": false,
+          "chat": false,
+          "cloudball": false,
+          "juggle": false,
+          "sleep": false,
+          "sword": false,
+          "draw": false,
+          "pilates": true,
+          "garden": false,
+          "kitchen": false,
+          "orchestra": false,
+          "atelier": false,
+          "laundry": false
+        },
+        "colors": [
+          "#f4c044",
+          "#d86c3c",
+          "#c4d078",
+          "#589448",
+          "#4460a0"
+        ],
+        "warp": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "beats": [
+        {
+          "seconds": 0,
+          "label": "Prepare"
+        },
+        {
+          "seconds": 3,
+          "label": "Action"
+        },
+        {
+          "seconds": 6,
+          "label": "Release"
+        },
+        {
+          "seconds": 9,
+          "label": "Recover"
+        }
+      ],
+      "roles": [
+        {
+          "index": 0,
+          "character": "Spark",
+          "name": "Balance",
+          "description": "A grounded leg supports a slow, deliberate side lift.",
+          "rig": "idle",
+          "project": "presets/pilates-spark.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/pilates-spark-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/pilates-spark-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/pilates-spark-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "character": "Orbit",
+          "name": "Mat roll",
+          "description": "The mushroom tucks its legs and rocks across its rounded dome.",
+          "rig": "idle",
+          "project": "presets/pilates-orbit.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/pilates-orbit-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/pilates-orbit-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/pilates-orbit-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "character": "Halo",
+          "name": "Bridge",
+          "description": "A side-on bridge opens and closes with a slow breathing arch.",
+          "rig": "idle",
+          "project": "presets/pilates-halo.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/pilates-halo-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/pilates-halo-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/pilates-halo-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "character": "Wave",
+          "name": "Seated twist",
+          "description": "A low seated pose gently turns from one side to the other.",
+          "rig": "idle",
+          "project": "presets/pilates-wave.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/pilates-wave-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/pilates-wave-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/pilates-wave-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "character": "Cloud",
+          "name": "Breathing",
+          "description": "The body widens softly while its cloud marks expand and settle.",
+          "rig": "idle",
+          "project": "presets/pilates-cloud.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/pilates-cloud-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/pilates-cloud-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/pilates-cloud-8.5.svg"
+            }
+          ]
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 1.5,
+          "file": "frames/pilates-1.5.svg"
+        },
+        {
+          "seconds": 4.5,
+          "file": "frames/pilates-4.5.svg"
+        },
+        {
+          "seconds": 8.5,
+          "file": "frames/pilates-8.5.svg"
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "title": "Plant nursery",
+      "description": "Sow, tend, irrigate, prune and rain. Every plant has its own caretaker.",
+      "project": "presets/garden.json",
+      "settings": {
+        "preset": "garden",
+        "cast": "all",
+        "character": 0,
+        "duration": 12,
+        "size": 0.28,
+        "energy": 0.85,
+        "tempo": 1,
+        "ground": 0.8,
+        "glow": 0,
+        "loop": true,
+        "colorWave": false,
+        "colorBlend": "smooth",
+        "sizeWave": false,
+        "sizeWaveAmount": 0.65,
+        "direction": "ltr",
+        "random": false,
+        "randomSeed": 1,
+        "randomEffects": false,
+        "enabledActions": {
+          "run": false,
+          "jump": false,
+          "dance": false,
+          "walk": false,
+          "march": false,
+          "shuffle": false,
+          "sidestep": false,
+          "sway": false,
+          "bow": false,
+          "twist": false,
+          "squat": false,
+          "kick": false,
+          "spin": false,
+          "swap": false,
+          "chase": false,
+          "solo": false,
+          "ball": false,
+          "confetti": false,
+          "peek": false,
+          "car": false,
+          "tag": false,
+          "disco": false,
+          "hide": false,
+          "chat": false,
+          "cloudball": false,
+          "juggle": false,
+          "sleep": false,
+          "sword": false,
+          "draw": false,
+          "pilates": false,
+          "garden": true,
+          "kitchen": false,
+          "orchestra": false,
+          "atelier": false,
+          "laundry": false
+        },
+        "colors": [
+          "#f4c044",
+          "#d86c3c",
+          "#c4d078",
+          "#589448",
+          "#4460a0"
+        ],
+        "warp": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "beats": [
+        {
+          "seconds": 0,
+          "label": "Prepare"
+        },
+        {
+          "seconds": 3,
+          "label": "Action"
+        },
+        {
+          "seconds": 6,
+          "label": "Release"
+        },
+        {
+          "seconds": 9,
+          "label": "Recover"
+        }
+      ],
+      "roles": [
+        {
+          "index": 0,
+          "character": "Spark",
+          "name": "Seed sower",
+          "description": "Lightning warms a shower of little seeds falling into the planter.",
+          "rig": "bow",
+          "project": "presets/garden-spark.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/garden-spark-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/garden-spark-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/garden-spark-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "character": "Orbit",
+          "name": "Soil keeper",
+          "description": "The mushroom compresses the soil while small clods tumble into place.",
+          "rig": "squat",
+          "project": "presets/garden-orbit.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/garden-orbit-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/garden-orbit-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/garden-orbit-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "character": "Halo",
+          "name": "Irrigator",
+          "description": "The floating stripes arrange an arched stream of blue water.",
+          "rig": "sway",
+          "project": "presets/garden-halo.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/garden-halo-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/garden-halo-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/garden-halo-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "character": "Wave",
+          "name": "Vine tender",
+          "description": "A curling green vine reveals itself and gathers fresh leaves.",
+          "rig": "twist",
+          "project": "presets/garden-wave.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/garden-wave-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/garden-wave-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/garden-wave-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "character": "Cloud",
+          "name": "Rain maker",
+          "description": "The original clouds release a gentle shower over a growing bud.",
+          "rig": "walk",
+          "project": "presets/garden-cloud.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/garden-cloud-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/garden-cloud-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/garden-cloud-8.5.svg"
+            }
+          ]
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 1.5,
+          "file": "frames/garden-1.5.svg"
+        },
+        {
+          "seconds": 4.5,
+          "file": "frames/garden-4.5.svg"
+        },
+        {
+          "seconds": 8.5,
+          "file": "frames/garden-8.5.svg"
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "title": "Cloud kitchen",
+      "description": "A tiny kitchen brigade: warm toast, soup, plates, noodles and cloud foam.",
+      "project": "presets/kitchen.json",
+      "settings": {
+        "preset": "kitchen",
+        "cast": "all",
+        "character": 0,
+        "duration": 12,
+        "size": 0.28,
+        "energy": 0.85,
+        "tempo": 1,
+        "ground": 0.8,
+        "glow": 0,
+        "loop": true,
+        "colorWave": false,
+        "colorBlend": "smooth",
+        "sizeWave": false,
+        "sizeWaveAmount": 0.65,
+        "direction": "ltr",
+        "random": false,
+        "randomSeed": 1,
+        "randomEffects": false,
+        "enabledActions": {
+          "run": false,
+          "jump": false,
+          "dance": false,
+          "walk": false,
+          "march": false,
+          "shuffle": false,
+          "sidestep": false,
+          "sway": false,
+          "bow": false,
+          "twist": false,
+          "squat": false,
+          "kick": false,
+          "spin": false,
+          "swap": false,
+          "chase": false,
+          "solo": false,
+          "ball": false,
+          "confetti": false,
+          "peek": false,
+          "car": false,
+          "tag": false,
+          "disco": false,
+          "hide": false,
+          "chat": false,
+          "cloudball": false,
+          "juggle": false,
+          "sleep": false,
+          "sword": false,
+          "draw": false,
+          "pilates": false,
+          "garden": false,
+          "kitchen": true,
+          "orchestra": false,
+          "atelier": false,
+          "laundry": false
+        },
+        "colors": [
+          "#f4c044",
+          "#d86c3c",
+          "#c4d078",
+          "#589448",
+          "#4460a0"
+        ],
+        "warp": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "beats": [
+        {
+          "seconds": 0,
+          "label": "Prepare"
+        },
+        {
+          "seconds": 3,
+          "label": "Action"
+        },
+        {
+          "seconds": 6,
+          "label": "Release"
+        },
+        {
+          "seconds": 9,
+          "label": "Recover"
+        }
+      ],
+      "roles": [
+        {
+          "index": 0,
+          "character": "Spark",
+          "name": "Toast master",
+          "description": "A lightning oven flips a small golden toast and lets it land.",
+          "rig": "squat",
+          "project": "presets/kitchen-spark.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/kitchen-spark-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/kitchen-spark-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/kitchen-spark-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "character": "Orbit",
+          "name": "Soup keeper",
+          "description": "A mushroom lid lifts as the little soup pot bubbles below.",
+          "rig": "sway",
+          "project": "presets/kitchen-orbit.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/kitchen-orbit-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/kitchen-orbit-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/kitchen-orbit-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "character": "Halo",
+          "name": "Plate stacker",
+          "description": "The stripes separate, line up and settle into a tidy plate stack.",
+          "rig": "bow",
+          "project": "presets/kitchen-halo.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/kitchen-halo-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/kitchen-halo-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/kitchen-halo-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "character": "Wave",
+          "name": "Noodle maker",
+          "description": "Green squiggles curl out of a bowl and coil gently back inside.",
+          "rig": "walk",
+          "project": "presets/kitchen-wave.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/kitchen-wave-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/kitchen-wave-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/kitchen-wave-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "character": "Cloud",
+          "name": "Cloud whisk",
+          "description": "Clouds stretch into foam above the mixing bowl, then settle.",
+          "rig": "twist",
+          "project": "presets/kitchen-cloud.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/kitchen-cloud-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/kitchen-cloud-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/kitchen-cloud-8.5.svg"
+            }
+          ]
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 1.5,
+          "file": "frames/kitchen-1.5.svg"
+        },
+        {
+          "seconds": 4.5,
+          "file": "frames/kitchen-4.5.svg"
+        },
+        {
+          "seconds": 8.5,
+          "file": "frames/kitchen-8.5.svg"
+        }
+      ]
+    },
+    {
+      "id": "orchestra",
+      "title": "Tiny orchestra",
+      "description": "Lightning percussion, dome bass, stripe keys, a squiggle conductor and cloud choir.",
+      "project": "presets/orchestra.json",
+      "settings": {
+        "preset": "orchestra",
+        "cast": "all",
+        "character": 0,
+        "duration": 12,
+        "size": 0.28,
+        "energy": 0.85,
+        "tempo": 1,
+        "ground": 0.8,
+        "glow": 0,
+        "loop": true,
+        "colorWave": false,
+        "colorBlend": "smooth",
+        "sizeWave": false,
+        "sizeWaveAmount": 0.65,
+        "direction": "ltr",
+        "random": false,
+        "randomSeed": 1,
+        "randomEffects": false,
+        "enabledActions": {
+          "run": false,
+          "jump": false,
+          "dance": false,
+          "walk": false,
+          "march": false,
+          "shuffle": false,
+          "sidestep": false,
+          "sway": false,
+          "bow": false,
+          "twist": false,
+          "squat": false,
+          "kick": false,
+          "spin": false,
+          "swap": false,
+          "chase": false,
+          "solo": false,
+          "ball": false,
+          "confetti": false,
+          "peek": false,
+          "car": false,
+          "tag": false,
+          "disco": false,
+          "hide": false,
+          "chat": false,
+          "cloudball": false,
+          "juggle": false,
+          "sleep": false,
+          "sword": false,
+          "draw": false,
+          "pilates": false,
+          "garden": false,
+          "kitchen": false,
+          "orchestra": true,
+          "atelier": false,
+          "laundry": false
+        },
+        "colors": [
+          "#f4c044",
+          "#d86c3c",
+          "#c4d078",
+          "#589448",
+          "#4460a0"
+        ],
+        "warp": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "beats": [
+        {
+          "seconds": 0,
+          "label": "Prepare"
+        },
+        {
+          "seconds": 3,
+          "label": "Action"
+        },
+        {
+          "seconds": 6,
+          "label": "Release"
+        },
+        {
+          "seconds": 9,
+          "label": "Recover"
+        }
+      ],
+      "roles": [
+        {
+          "index": 0,
+          "character": "Spark",
+          "name": "Percussion",
+          "description": "Three lightning marks answer a row of small percussion beats.",
+          "rig": "walk",
+          "project": "presets/orchestra-spark.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/orchestra-spark-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/orchestra-spark-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/orchestra-spark-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "character": "Orbit",
+          "name": "Dome bass",
+          "description": "The mushroom dome resonates like a soft, slow bass drum.",
+          "rig": "bow",
+          "project": "presets/orchestra-orbit.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/orchestra-orbit-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/orchestra-orbit-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/orchestra-orbit-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "character": "Halo",
+          "name": "Stripe keys",
+          "description": "A stripe xylophone lights its keys in a little repeating phrase.",
+          "rig": "twist",
+          "project": "presets/orchestra-halo.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/orchestra-halo-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/orchestra-halo-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/orchestra-halo-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "character": "Wave",
+          "name": "Conductor",
+          "description": "The green crest traces a broad rhythmic cue for the whole ensemble.",
+          "rig": "sway",
+          "project": "presets/orchestra-wave.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/orchestra-wave-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/orchestra-wave-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/orchestra-wave-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "character": "Cloud",
+          "name": "Cloud choir",
+          "description": "The cloud marks sing a visual phrase across the top of the stage.",
+          "rig": "squat",
+          "project": "presets/orchestra-cloud.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/orchestra-cloud-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/orchestra-cloud-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/orchestra-cloud-8.5.svg"
+            }
+          ]
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 1.5,
+          "file": "frames/orchestra-1.5.svg"
+        },
+        {
+          "seconds": 4.5,
+          "file": "frames/orchestra-4.5.svg"
+        },
+        {
+          "seconds": 8.5,
+          "file": "frames/orchestra-8.5.svg"
+        }
+      ]
+    },
+    {
+      "id": "atelier",
+      "title": "Print & pottery",
+      "description": "Five stations, one workshop: lightning prints, clay, weaving, calligraphy and cloud ink.",
+      "project": "presets/atelier.json",
+      "settings": {
+        "preset": "atelier",
+        "cast": "all",
+        "character": 0,
+        "duration": 12,
+        "size": 0.28,
+        "energy": 0.85,
+        "tempo": 1,
+        "ground": 0.8,
+        "glow": 0,
+        "loop": true,
+        "colorWave": false,
+        "colorBlend": "smooth",
+        "sizeWave": false,
+        "sizeWaveAmount": 0.65,
+        "direction": "ltr",
+        "random": false,
+        "randomSeed": 1,
+        "randomEffects": false,
+        "enabledActions": {
+          "run": false,
+          "jump": false,
+          "dance": false,
+          "walk": false,
+          "march": false,
+          "shuffle": false,
+          "sidestep": false,
+          "sway": false,
+          "bow": false,
+          "twist": false,
+          "squat": false,
+          "kick": false,
+          "spin": false,
+          "swap": false,
+          "chase": false,
+          "solo": false,
+          "ball": false,
+          "confetti": false,
+          "peek": false,
+          "car": false,
+          "tag": false,
+          "disco": false,
+          "hide": false,
+          "chat": false,
+          "cloudball": false,
+          "juggle": false,
+          "sleep": false,
+          "sword": false,
+          "draw": false,
+          "pilates": false,
+          "garden": false,
+          "kitchen": false,
+          "orchestra": false,
+          "atelier": true,
+          "laundry": false
+        },
+        "colors": [
+          "#f4c044",
+          "#d86c3c",
+          "#c4d078",
+          "#589448",
+          "#4460a0"
+        ],
+        "warp": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "beats": [
+        {
+          "seconds": 0,
+          "label": "Prepare"
+        },
+        {
+          "seconds": 3,
+          "label": "Action"
+        },
+        {
+          "seconds": 6,
+          "label": "Release"
+        },
+        {
+          "seconds": 9,
+          "label": "Recover"
+        }
+      ],
+      "roles": [
+        {
+          "index": 0,
+          "character": "Spark",
+          "name": "Stamp printer",
+          "description": "A lightning stamp presses down and leaves a short trail of golden prints.",
+          "rig": "bow",
+          "project": "presets/atelier-spark.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/atelier-spark-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/atelier-spark-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/atelier-spark-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "character": "Orbit",
+          "name": "Clay turner",
+          "description": "A little dome of clay rotates and changes profile above a pottery wheel.",
+          "rig": "twist",
+          "project": "presets/atelier-orbit.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/atelier-orbit-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/atelier-orbit-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/atelier-orbit-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "character": "Halo",
+          "name": "Stripe weaver",
+          "description": "Horizontal stripe threads slide across a small woven panel.",
+          "rig": "walk",
+          "project": "presets/atelier-halo.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/atelier-halo-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/atelier-halo-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/atelier-halo-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "character": "Wave",
+          "name": "Calligrapher",
+          "description": "A green stroke draws its own curl, pauses and quietly clears.",
+          "rig": "squat",
+          "project": "presets/atelier-wave.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/atelier-wave-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/atelier-wave-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/atelier-wave-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "character": "Cloud",
+          "name": "Cloud printer",
+          "description": "Cloud-shaped ink marks appear one at a time on a small print bed.",
+          "rig": "sway",
+          "project": "presets/atelier-cloud.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/atelier-cloud-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/atelier-cloud-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/atelier-cloud-8.5.svg"
+            }
+          ]
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 1.5,
+          "file": "frames/atelier-1.5.svg"
+        },
+        {
+          "seconds": 4.5,
+          "file": "frames/atelier-4.5.svg"
+        },
+        {
+          "seconds": 8.5,
+          "file": "frames/atelier-8.5.svg"
+        }
+      ]
+    },
+    {
+      "id": "laundry",
+      "title": "Bubble laundry",
+      "description": "Warm air, a tumbling wash, folded towels, a curling line and a cloud rinse.",
+      "project": "presets/laundry.json",
+      "settings": {
+        "preset": "laundry",
+        "cast": "all",
+        "character": 0,
+        "duration": 12,
+        "size": 0.28,
+        "energy": 0.85,
+        "tempo": 1,
+        "ground": 0.8,
+        "glow": 0,
+        "loop": true,
+        "colorWave": false,
+        "colorBlend": "smooth",
+        "sizeWave": false,
+        "sizeWaveAmount": 0.65,
+        "direction": "ltr",
+        "random": false,
+        "randomSeed": 1,
+        "randomEffects": false,
+        "enabledActions": {
+          "run": false,
+          "jump": false,
+          "dance": false,
+          "walk": false,
+          "march": false,
+          "shuffle": false,
+          "sidestep": false,
+          "sway": false,
+          "bow": false,
+          "twist": false,
+          "squat": false,
+          "kick": false,
+          "spin": false,
+          "swap": false,
+          "chase": false,
+          "solo": false,
+          "ball": false,
+          "confetti": false,
+          "peek": false,
+          "car": false,
+          "tag": false,
+          "disco": false,
+          "hide": false,
+          "chat": false,
+          "cloudball": false,
+          "juggle": false,
+          "sleep": false,
+          "sword": false,
+          "draw": false,
+          "pilates": false,
+          "garden": false,
+          "kitchen": false,
+          "orchestra": false,
+          "atelier": false,
+          "laundry": true
+        },
+        "colors": [
+          "#f4c044",
+          "#d86c3c",
+          "#c4d078",
+          "#589448",
+          "#4460a0"
+        ],
+        "warp": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "beats": [
+        {
+          "seconds": 0,
+          "label": "Prepare"
+        },
+        {
+          "seconds": 3,
+          "label": "Action"
+        },
+        {
+          "seconds": 6,
+          "label": "Release"
+        },
+        {
+          "seconds": 9,
+          "label": "Recover"
+        }
+      ],
+      "roles": [
+        {
+          "index": 0,
+          "character": "Spark",
+          "name": "Warm-air dryer",
+          "description": "Lightning becomes a warm-air fan that lifts and lowers a small cloth.",
+          "rig": "sway",
+          "project": "presets/laundry-spark.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/laundry-spark-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/laundry-spark-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/laundry-spark-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "character": "Orbit",
+          "name": "Tumble wash",
+          "description": "A round eye window turns its small load inside the washing tub.",
+          "rig": "walk",
+          "project": "presets/laundry-orbit.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/laundry-orbit-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/laundry-orbit-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/laundry-orbit-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "character": "Halo",
+          "name": "Towel folder",
+          "description": "The stripe towels unfold, realign and stack into a neat pile.",
+          "rig": "squat",
+          "project": "presets/laundry-halo.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/laundry-halo-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/laundry-halo-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/laundry-halo-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "character": "Wave",
+          "name": "Line arranger",
+          "description": "A curling clothesline carries three tiny cloths through a soft wave.",
+          "rig": "bow",
+          "project": "presets/laundry-wave.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/laundry-wave-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/laundry-wave-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/laundry-wave-8.5.svg"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "character": "Cloud",
+          "name": "Cloud rinse",
+          "description": "Cloud soap circles the rinse bowl while small bubbles rise and disappear.",
+          "rig": "twist",
+          "project": "presets/laundry-cloud.json",
+          "samples": [
+            {
+              "seconds": 1.5,
+              "file": "frames/laundry-cloud-1.5.svg"
+            },
+            {
+              "seconds": 4.5,
+              "file": "frames/laundry-cloud-4.5.svg"
+            },
+            {
+              "seconds": 8.5,
+              "file": "frames/laundry-cloud-8.5.svg"
+            }
+          ]
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 1.5,
+          "file": "frames/laundry-1.5.svg"
+        },
+        {
+          "seconds": 4.5,
+          "file": "frames/laundry-4.5.svg"
+        },
+        {
+          "seconds": 8.5,
+          "file": "frames/laundry-8.5.svg"
+        }
+      ]
+    }
+  ]
+}
